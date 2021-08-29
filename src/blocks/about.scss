@@ -6,7 +6,7 @@
   max-width: 1920px;
   padding: 40px 16px;
 
-  @include onLargDesktop {
+  @include onLargeDesktop {
     padding: 55px 60px 135px;
   }
 

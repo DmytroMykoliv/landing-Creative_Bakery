@@ -41,7 +41,7 @@
   }
 }
 
-@mixin onLargDesktop {
+@mixin onLargeDesktop {
   @media (min-width: 1440px) {
     @content;
   }

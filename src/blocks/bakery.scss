@@ -21,7 +21,7 @@
   }
 
   &__subtitle {
-    @include onLargDesktop {
+    @include onLargeDesktop {
       margin-bottom: 25px;
     }
   }
@@ -40,7 +40,7 @@
       gap: 70px;
     }
 
-    @include onLargDesktop {
+    @include onLargeDesktop {
       gap: 130px;
       margin-bottom: 135px;
     }
@@ -56,7 +56,7 @@
       }
     }
 
-    @include onLargDesktop {
+    @include onLargeDesktop {
       gap: 107px;
     }
 
@@ -107,11 +107,12 @@
     max-width: 1600px;
     width: 100%;
     display: grid;
-    grid-template-columns: 15px 1fr 15px;
+    grid-template-columns: 1fr;
+    // grid-template-columns: 15px 1fr 15px; - for slider
     justify-items: center;
     gap: 2px;
 
-    @include onLargDesktop {
+    @include onLargeDesktop {
       height: 514px;
     }
   }
@@ -121,6 +122,11 @@
     min-height: 200px;
     max-height: 514px;
     width: 100%;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     @each $index, $img in $images {
       &--#{$index} {
